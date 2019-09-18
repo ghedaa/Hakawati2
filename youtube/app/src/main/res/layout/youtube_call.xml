@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp">
+
+    </com.google.android.youtube.player.YouTubePlayerView>
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3400BCD4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:background="@color/white"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="6dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to make a CupCake"
+            android:textColor="#000000"
+            android:layout_marginTop="-5dp"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_marginBottom="-23dp"
+            android:text="3K views" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/up"
+            android:tint="#59FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/down"
+            android:tint="#27FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="166dp"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/share"
+            android:tint="#75FFFFFF"/>
+
+        <View
+            android:id="@+id/SplitLine_hor1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="88dp"
+            android:background="#59000000" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="88dp"
+            android:src="@mipmap/error"
+            />
+
+        <View
+            android:id="@+id/SplitLine_hor2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="138dp"
+            android:background="#59000000" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="55dp"
+            android:textColor="#EE000000"
+            android:text="CupCake Factory" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="114dp"
+            android:layout_marginLeft="55dp"
+            android:text="2M Subscribers" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="77dp"
+            android:src="@drawable/sub" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="255dp"
+            android:src="@drawable/listview"
+            android:tint="#541B0101"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
